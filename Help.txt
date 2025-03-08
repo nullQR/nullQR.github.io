@@ -1,0 +1,14 @@
+Go to:
+
+https://www.online-python.com/
+
+
+and paste in the top box:
+##################
+encoded_text = input("Paste input here: ")
+try:
+    print(''.join([__import__('unicodedata').lookup(i) for i in eval(encoded_text)]))
+except:
+    print('Incorrect input or Error')
+##################
+then select 'Run' and look at the bottom box.
